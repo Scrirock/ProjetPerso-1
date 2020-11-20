@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+}
+
+nav{
+    width: 100%;
+    margin: 0;
+    position: sticky;
+    top: 0;
+    background-color: #212121;
+    font-size: 2rem;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav li[class="menu"] {
+    padding: 0 20px;
+}
+
+nav li:last-child[class="menu"]{
+    border: 2px solid #9b9b9b;
+    border-radius: 15px;
+    left: 10%
+}
+
+nav li:first-child[class="menu"]{
+    position: relative;
+    margin-left: 20%;
+}
+
+nav ul li{
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+
+nav ul li:hover{
+    background-color: #9b9b9b;
+    border-radius: 0 25px;
+}
+
+nav ul li:hover > a{
+    color: #212121;
+}
+
+nav ul[class="sousMenu"] > a:hover{
+    background-color: #9b9b9b;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: #9b9b9b;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0;
+}
+
+.sousMenu{
+    display: none;
+    box-shadow: 2px 3px 8px #212121;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav > ul li:hover .sousMenu{
+    display: block;
+    width: 200%;
+    background-color: #212121;
+}
+
+.sousMenu li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+
+.sousMenu a{
+    padding: 10px;
+    border-bottom: none;
+}
+
+ul{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.separation {
+    background: transparent url(blanc.png) no-repeat top left;
+    width: 2px;
+    height: 2.5rem;
+    position: relative;
+    top: 1rem;
+}
+
+.separation hr {
+    display: none;
+}
