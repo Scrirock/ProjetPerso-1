@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -27,17 +29,6 @@ nav ul{
 
 nav li[class="menu"] {
     padding: 0 20px;
-}
-
-nav li:last-child[class="menu"]{
-    border: 2px solid #9b9b9b;
-    border-radius: 15px;
-    left: 10%
-}
-
-nav li:first-child[class="menu"]{
-    position: relative;
-    margin-left: 20%;
 }
 
 nav ul li{
@@ -107,4 +98,36 @@ ul{
 
 .separation hr {
     display: none;
+}
+
+.fas.fa-tools{
+    color: #9b9b9b;
+    margin: 13px;
+}
+
+.rechercheMenu{
+    position: relative;
+    height: 2.4rem;
+    width: 10rem;
+    margin-top: 13px;
+    margin-right: 15px;
+    background-color: #9b9b9b;
+}
+
+.droiteMenu{
+    display: flex;
+    flex-flow: row-reverse nowrap;
+}
+
+.plus{
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.conec{
+    border: 2px solid #9b9b9b;
+    border-radius: 15px;
+    margin-left: 15px;
+    float: right;
+    padding: 10px 20px;
 }
