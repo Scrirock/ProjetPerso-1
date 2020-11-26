@@ -132,10 +132,11 @@ ul{
     padding: 10px 20px;
 }
 
-button{
+#rouge, #jaune, #mauve, #vert, #bleu{
     width: 5rem;
     height: 5rem;
     margin: 10rem;
+    display: inline-block;
 }
 
 #bleu{
