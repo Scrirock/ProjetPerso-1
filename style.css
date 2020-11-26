@@ -131,3 +131,25 @@ ul{
     float: right;
     padding: 10px 20px;
 }
+
+button{
+    width: 5rem;
+    height: 5rem;
+    margin: 10rem;
+}
+
+#bleu{
+    background-color: blue;
+}
+#rouge{
+    background-color: red;
+}
+#vert{
+    background-color: lawngreen;
+}
+#jaune{
+    background-color: yellow;
+}
+#mauve{
+    background-color: purple;
+}
