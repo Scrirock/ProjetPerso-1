@@ -20,8 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cec7916c-d0a1-4c61-bd9d-921375517139" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/go.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wrong.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mauve.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrpt.js" beforeDir="false" afterPath="$PROJECT_DIR$/scrpt.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +57,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -80,6 +87,7 @@
       <workItem from="1605863223240" duration="6301000" />
       <workItem from="1605876542329" duration="6283000" />
       <workItem from="1606394919104" duration="1052000" />
+      <workItem from="1606464420639" duration="6551000" />
     </task>
     <servers />
   </component>

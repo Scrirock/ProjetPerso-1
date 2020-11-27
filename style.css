@@ -132,11 +132,12 @@ ul{
     padding: 10px 20px;
 }
 
-#rouge, #jaune, #mauve, #vert, #bleu{
+#rouge, #jaune, #vert, #bleu{
     width: 5rem;
     height: 5rem;
     margin: 10rem;
     display: inline-block;
+    opacity: .5;
 }
 
 #bleu{
@@ -151,6 +152,8 @@ ul{
 #jaune{
     background-color: yellow;
 }
-#mauve{
-    background-color: purple;
+#go{
+    background-image: url("go.PNG");
+    width: 307px;
+    height: 181px;
 }
