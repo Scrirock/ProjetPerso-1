@@ -16,6 +16,7 @@ function wrong(){
     flag = 0;
     i = 0;
     jeu = 0;
+    ordreVerif = [];
 }
 
 function win(){
@@ -25,6 +26,7 @@ function win(){
     flag = 0;
     i = 0;
     jeu = 0;
+    ordreVerif = [];
 }
 
 async function rouge(){
