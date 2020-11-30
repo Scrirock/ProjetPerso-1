@@ -34,7 +34,7 @@ async function rouge(){
         let rouge = new Audio();
         rouge.src = "rouge.wav";
         rouge.play();
-        document.getElementById("rouge").style.opacity = "1";
+        document.getElementById("rouge").style.background= "red";
         ordre.push("r");
 
         if (flag === 1) {
@@ -44,7 +44,7 @@ async function rouge(){
             } else wrong();
         }
         await sleep(200);
-        document.getElementById("rouge").style.opacity = ".5";
+        document.getElementById("rouge").style.background= "#212121";
     }
 }
 
@@ -53,7 +53,7 @@ async function bleu(){
         let bleu = new Audio();
         bleu.src = "bleu.wav";
         bleu.play();
-        document.getElementById("bleu").style.opacity = "1";
+        document.getElementById("bleu").style.background= "blue";
         ordre.push("b");
 
         if (flag === 1) {
@@ -63,7 +63,7 @@ async function bleu(){
             } else wrong();
         }
         await sleep(200);
-        document.getElementById("bleu").style.opacity = ".5";
+        document.getElementById("bleu").style.background= "#212121";
     }
 }
 
@@ -72,7 +72,7 @@ async function jaune(){
         let jaune = new Audio();
         jaune.src = "jaune.wav";
         jaune.play();
-        document.getElementById("jaune").style.opacity = "1";
+        document.getElementById("jaune").style.background= "yellow";
         ordre.push("j");
 
         if (flag === 1) {
@@ -82,7 +82,7 @@ async function jaune(){
             } else wrong();
         }
         await sleep(200);
-        document.getElementById("jaune").style.opacity = ".5";
+        document.getElementById("jaune").style.background= "#212121";
     }
 }
 
@@ -91,7 +91,7 @@ async function vert(){
         let vert = new Audio();
         vert.src = "vert.wav";
         vert.play();
-        document.getElementById("vert").style.opacity = "1";
+        document.getElementById("vert").style.background= "green";
         ordre.push("v");
 
         if (flag === 1) {
@@ -101,7 +101,7 @@ async function vert(){
             } else wrong();
         }
         await sleep(200);
-        document.getElementById("vert").style.opacity = ".5";
+        document.getElementById("vert").style.background= "#212121";
     }
 }
 
@@ -118,25 +118,21 @@ async function go(){
                 rouge();
                 ordreVerif.push("r");
                 await sleep(200);
-                document.getElementById("rouge").style.opacity = ".5";
                 break;
             case 1:
                 bleu();
                 ordreVerif.push("b");
                 await sleep(200);
-                document.getElementById("bleu").style.opacity = ".5";
                 break;
             case 2:
                 vert();
                 ordreVerif.push("v");
                 await sleep(200);
-                document.getElementById("vert").style.opacity = ".5";
                 break;
             case 3:
                 jaune();
                 ordreVerif.push("j");
                 await sleep(200);
-                document.getElementById("jaune").style.opacity = ".5";
                 break;
         }
         await sleep(1000);

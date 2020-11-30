@@ -38,19 +38,6 @@ nav ul li{
     display: inline-block;
 }
 
-nav ul li:hover{
-    background-color: #9b9b9b;
-    border-radius: 0 25px;
-}
-
-nav ul li:hover > a{
-    color: #212121;
-}
-
-nav ul[class="sousMenu"] > a:hover{
-    background-color: #9b9b9b;
-}
-
 nav a{
     display: block;
     text-decoration: none;
@@ -60,16 +47,11 @@ nav a{
 }
 
 .sousMenu{
-    display: none;
+    display: block;
     box-shadow: 2px 3px 8px #212121;
     position: absolute;
     width: 100%;
     z-index: 1000;
-}
-
-nav > ul li:hover .sousMenu{
-    display: block;
-    width: 200%;
     background-color: #212121;
 }
 
@@ -106,14 +88,6 @@ ul{
     margin: 13px;
 }
 
-li:hover .fas.fa-tools{
-    color: #212121;
-}
-
-li[id="non"]:hover{
-    background-color: #212121;
-}
-
 .rechercheMenu{
     position: relative;
     height: 2.4rem;
@@ -139,5 +113,17 @@ li[id="non"]:hover{
     margin-left: 15px;
     float: right;
     padding: 10px 20px;
-    margin-bottom: 15px;
+}
+
+#rouge, #jaune, #vert, #bleu{
+    width: 100%;
+    height: 2rem;
+}
+
+#go{
+    background-image: url("go.PNG");
+    width: 307px;
+    height: 181px;
+    margin-top: 30rem;
+    margin-left: 12rem;
 }
