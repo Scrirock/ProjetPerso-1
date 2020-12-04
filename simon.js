@@ -1,13 +1,10 @@
 let rng = null;
-let i = 0;
 let flag = 0;
+let i = 0;
+let y = 0;
 let ordre = [];
 let ordreVerif = [];
 let jeu = 0;
-
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-}
 
 function wrong(){
     let wrong = new Audio();
@@ -17,6 +14,7 @@ function wrong(){
     i = 0;
     jeu = 0;
     ordreVerif = [];
+    y = 0;
 }
 
 function win(){
@@ -27,9 +25,10 @@ function win(){
     i = 0;
     jeu = 0;
     ordreVerif = [];
+    y = 0;
 }
 
-async function rouge(){
+function rouge(){
     if (jeu === 1) {
         let rouge = new Audio();
         rouge.src = "rouge.wav";
@@ -43,12 +42,11 @@ async function rouge(){
                 if (i === 4) win();
             } else wrong();
         }
-        await sleep(200);
-        document.getElementById("rouge").style.background= "#212121";
+        setTimeout(() => {document.getElementById("rouge").style.background= "#212121";}, 200);
     }
 }
 
-async function bleu(){
+function bleu(){
     if (jeu === 1) {
         let bleu = new Audio();
         bleu.src = "bleu.wav";
@@ -62,12 +60,11 @@ async function bleu(){
                 if (i === 4) win();
             } else wrong();
         }
-        await sleep(200);
-        document.getElementById("bleu").style.background= "#212121";
+        setTimeout(() => {document.getElementById("bleu").style.background= "#212121";}, 200);
     }
 }
 
-async function jaune(){
+function jaune(){
     if (jeu === 1) {
         let jaune = new Audio();
         jaune.src = "jaune.wav";
@@ -81,12 +78,11 @@ async function jaune(){
                 if (i === 4) win();
             } else wrong();
         }
-        await sleep(200);
-        document.getElementById("jaune").style.background= "#212121";
+        setTimeout(() => {document.getElementById("jaune").style.background= "#212121";}, 200);
     }
 }
 
-async function vert(){
+function vert(){
     if (jeu === 1) {
         let vert = new Audio();
         vert.src = "vert.wav";
@@ -100,49 +96,50 @@ async function vert(){
                 if (i === 4) win();
             } else wrong();
         }
-        await sleep(200);
-        document.getElementById("vert").style.background= "#212121";
+        setTimeout(() => {document.getElementById("vert").style.background= "#212121";}, 200);
     }
 }
 
-async function go(){
+function go(){
     let go = new Audio();
     go.src = "go.wav";
-    await go.play();
+    go.play();
     jeu = 1;
-    await sleep(1000);
-    while (i<4){
+    let brol = setInterval(() => {
         rng = getRandomInt(4)
-        switch (rng){
+        switch (rng) {
             case 0:
                 rouge();
                 ordreVerif.push("r");
-                await sleep(200);
                 break;
             case 1:
                 bleu();
                 ordreVerif.push("b");
-                await sleep(200);
                 break;
             case 2:
                 vert();
                 ordreVerif.push("v");
-                await sleep(200);
                 break;
             case 3:
                 jaune();
                 ordreVerif.push("j");
-                await sleep(200);
                 break;
         }
-        await sleep(1000);
-        i++;
-    }
-    i = 0;
-    ordre = [];
-    flag = 1;
+        if (y === 3){
+            clearInterval(brol);
+            ordre = [];
+            flag = 1;
+        }
+        y++;
+        }, 1000);
 }
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
 }
+
+document.getElementById("rouge").addEventListener("click", rouge);
+document.getElementById("bleu").addEventListener("click", bleu);
+document.getElementById("vert").addEventListener("click", vert);
+document.getElementById("jaune").addEventListener("click", jaune);
+document.getElementById("go").addEventListener("click", go);
