@@ -10,6 +10,7 @@ html {
 
 body {
     width: 100%;
+    background-color: #9b9b9b;
 }
 
 .fond{
@@ -45,4 +46,14 @@ body {
 
 #jaune{
     border-radius: 0 0 200px 0;
+}
+
+a{
+    text-decoration: none;
+    font-size: 4rem;
+    background-color: #9b9b9b;
+    color: #212121;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 2px solid black;
 }

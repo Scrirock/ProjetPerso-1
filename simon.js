@@ -143,3 +143,25 @@ document.getElementById("bleu").addEventListener("click", bleu);
 document.getElementById("vert").addEventListener("click", vert);
 document.getElementById("jaune").addEventListener("click", jaune);
 document.getElementById("go").addEventListener("click", go);
+
+let sombre = 1;
+
+function exit(){
+    let theme = document.getElementById("exit");
+
+    if (sombre === 0){
+        theme.style.backgroundColor = "#9b9b9b"
+        theme.style.color = "#212121"
+        document.body.style.backgroundColor = "#9b9b9b"
+        sombre = 1;
+    }
+    else {
+        theme.style.backgroundColor = "#212121"
+        theme.style.color = "#9b9b9b"
+        document.body.style.backgroundColor = "#212121"
+        sombre = 0;
+    }
+
+}
+
+document.getElementById("theme").addEventListener("click", exit);
