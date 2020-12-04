@@ -110,10 +110,6 @@ li:hover .fas.fa-tools{
     color: #212121;
 }
 
-li[id="non"]:hover{
-    background-color: #212121;
-}
-
 .rechercheMenu{
     position: relative;
     height: 2.4rem;
@@ -140,4 +136,8 @@ li[id="non"]:hover{
     float: right;
     padding: 10px 20px;
     margin-bottom: 15px;
+}
+
+#easterEgg{
+    display: none;
 }
